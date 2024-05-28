@@ -24,6 +24,8 @@ double divideTest2 = 7.0 / 2.0; //gives 3.5 which is accurate
 Console.WriteLine(divideTest);
 Console.WriteLine(divideTest2);
 
+
+
 // one way 
 int learnVariables = 1;
 learnVariables = learnVariables + 1;
@@ -33,3 +35,27 @@ Console.WriteLine(learnVariables);
 int learnVariables2 = 1;
 learnVariables2 += 1;
 Console.WriteLine(learnVariables2);
+
+
+int num = 4542535;
+// changes int to long implicitly
+long bignum = num;
+
+double x = 1234.5;
+int f;
+//changes double to int explicitly
+f = (int)x;
+
+
+
+//convert string to int
+string value = "124234";
+int result = 0;
+if(int.TryParse(value, out result))
+{
+    Console.WriteLine("Success: " + result);
+}
+else
+{
+    Console.WriteLine("Failure");
+}
