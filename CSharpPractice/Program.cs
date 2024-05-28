@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using CSharpPractice;
 
 var testVar = "hello";
 Console.WriteLine(testVar);
@@ -49,7 +50,7 @@ f = (int)x;
 
 
 //convert string to int
-string value = "124234";
+string value = "1234";
 int result = 0;
 if(int.TryParse(value, out result))
 {
@@ -59,3 +60,14 @@ else
 {
     Console.WriteLine("Failure");
 }
+
+
+// stack vs heap
+int testValue = 4; // stack
+byte lowLevelValue = 3; // stack
+bool boolValue = false; // stack
+string stringValue = "string"; // heap
+
+HeapExample stackHeap = new HeapExample();
+
+stackHeap.AddFive(10);
