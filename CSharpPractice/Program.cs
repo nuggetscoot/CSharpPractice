@@ -71,3 +71,13 @@ string stringValue = "string"; // heap
 HeapExample stackHeap = new HeapExample();
 
 stackHeap.AddFive(10);
+
+
+//fixed array
+int[] intArray = new int[2];
+intArray[0] = 1;
+Console.WriteLine(intArray);
+
+//dynamic array
+int[] dynamicArray = new int[] { 1, 2, 3, 4, 5 };
+Console.WriteLine(dynamicArray);
