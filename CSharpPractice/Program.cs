@@ -110,3 +110,15 @@ Console.WriteLine($"My name is {firstName} {lastName}");
 
 //Composite formatting
 Console.WriteLine("My name is {0} {1}", firstName, lastName);
+
+// created custo object
+List<Part> lst = new List<Part>();
+
+lst.Add(new Part { PartName = "Headlight", PartId = 1 });
+lst.Add(new Part { PartName = "Bumper", PartId = 2 });
+
+foreach(Part part in lst)
+{
+    Console.WriteLine(part.PartName);
+    Console.WriteLine(part.PartId);
+}
